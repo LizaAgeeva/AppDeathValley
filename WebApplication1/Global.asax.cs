@@ -5,6 +5,11 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using Chart.BLL.Infrastructure;
+using Chart.WEB.Util;
+using Ninject;
+using Ninject.Modules;
+using Ninject.Web.Mvc;
 
 namespace WebApplication1
 {
@@ -16,6 +21,14 @@ namespace WebApplication1
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            App_Start.AutoMapperConfig.Initialize();
+
+            NinjectModule paramModule = new ParamModule();
+            NinjectModule serviceModule = new ServiceModule("DefaultConnection");
+            var kernel = new StandardKernel(paramModule, serviceModule);
+            DependencyResolver.SetResolver(new NinjectDependencyResolver(kernel));
+
         }
     }
 }

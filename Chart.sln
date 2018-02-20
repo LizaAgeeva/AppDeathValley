@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2010
+VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chart", "WebApplication1\Chart.csproj", "{C1523382-64AC-4B9F-949B-AF1459AB12C3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chart.WEB", "WebApplication1\Chart.WEB.csproj", "{C1523382-64AC-4B9F-949B-AF1459AB12C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chart.DAL", "Chart.DAL\Chart.DAL.csproj", "{440BAF26-0F34-4299-AD3E-C0A9F851ECFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chart.BLL", "Chart.BLL\Chart.BLL.csproj", "{39CBEB65-B61F-4A39-8E7D-F6C04EE4D9BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{C1523382-64AC-4B9F-949B-AF1459AB12C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1523382-64AC-4B9F-949B-AF1459AB12C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1523382-64AC-4B9F-949B-AF1459AB12C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{440BAF26-0F34-4299-AD3E-C0A9F851ECFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{440BAF26-0F34-4299-AD3E-C0A9F851ECFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{440BAF26-0F34-4299-AD3E-C0A9F851ECFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{440BAF26-0F34-4299-AD3E-C0A9F851ECFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39CBEB65-B61F-4A39-8E7D-F6C04EE4D9BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39CBEB65-B61F-4A39-8E7D-F6C04EE4D9BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39CBEB65-B61F-4A39-8E7D-F6C04EE4D9BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39CBEB65-B61F-4A39-8E7D-F6C04EE4D9BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

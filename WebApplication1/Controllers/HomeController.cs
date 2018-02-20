@@ -3,15 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using WebApplication1.Models;
+using Chart.WEB.Models;
+using Chart.BLL.Infrastructure;
+using Chart.BLL.Interfaces;
+using Chart.BLL.DTO;
+using AutoMapper;
 
-namespace WebApplication1.Controllers
+
+namespace Chart.WEB.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+      
+
+        private IDataService _DataService;
+
+        public HomeController(IDataService DataService)
         {
-            return View();
+            _DataService = DataService;
         }
 
         public ActionResult Chart()
@@ -25,18 +34,10 @@ namespace WebApplication1.Controllers
          
             if (ModelState.IsValid)
             {
-                List<ChartData> pointArray = new List<ChartData>();
+                var param = Mapper.Map<Params, ParamDTO>(model);
+                var result = _DataService.GetData(param);
 
-                int k = 0;
-
-                for (double x = model.SizeFrom; x <= model.SizeTo; x += model.Step)
-                {
-                    k++;
-                    double y = model.CoefficientA * x * x + model.CoefficientB * x + model.CoefficientC;
-                    pointArray.Add(new ChartData { PointX = x, PointY = y });
-                }
-
-                return Json(pointArray, JsonRequestBehavior.AllowGet);
+                return Json(result, JsonRequestBehavior.AllowGet);
             }
             else
             {
@@ -58,18 +59,6 @@ namespace WebApplication1.Controllers
 
 
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
+       
     }
 }
