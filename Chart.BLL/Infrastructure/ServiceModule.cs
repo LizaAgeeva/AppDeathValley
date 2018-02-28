@@ -10,11 +10,29 @@ using Ninject.Modules;
 namespace Chart.BLL.Infrastructure
 {
     public class ServiceModule: NinjectModule
+
     {
+        //using Singleton
         private string _connectionString;
-        public ServiceModule(string connectionString)
+        private static ServiceModule service;
+        private ServiceModule(string connectionString)
         {
             _connectionString = connectionString;
+        }
+        public static ServiceModule GetInstance(string connectionString)
+        {
+            // для исключения возможности создания двух объектов 
+            // при многопоточном приложении
+            if (service == null)
+            {
+                lock (typeof(ServiceModule))
+                {
+                    if (service == null)
+                        service = new ServiceModule(connectionString);
+                }
+            }
+
+            return service;
         }
         public override void Load()
         {

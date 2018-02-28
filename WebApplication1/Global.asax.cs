@@ -25,7 +25,8 @@ namespace WebApplication1
             App_Start.AutoMapperConfig.Initialize();
 
             NinjectModule paramModule = new ParamModule();
-            NinjectModule serviceModule = new ServiceModule("DefaultConnection");
+            // NinjectModule serviceModule = new ServiceModule("DefaultConnection");
+            NinjectModule serviceModule = ServiceModule.GetInstance("DefaultConnection");
             var kernel = new StandardKernel(paramModule, serviceModule);
             DependencyResolver.SetResolver(new NinjectDependencyResolver(kernel));
 

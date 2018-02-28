@@ -7,6 +7,7 @@ using Chart.WEB.Models;
 using Chart.BLL.Infrastructure;
 using Chart.BLL.Interfaces;
 using Chart.BLL.DTO;
+using Chart.BLL.BussinessModels;
 using AutoMapper;
 
 
@@ -25,6 +26,16 @@ namespace Chart.WEB.Controllers
 
         public ActionResult Chart()
         {
+            return View();
+        }
+        public ActionResult TypeChart()
+        {
+            // Factory Method 
+            FactoryMethod factory1 = new FactoryMethod("Pie");
+            string type1 = factory1.typeChart;
+            FactoryMethod factory2 = new FactoryMethod("Line");
+            string type2 = factory2.typeChart;
+            ViewBag.Message = type1 + " and " + type2;
             return View();
         }
 

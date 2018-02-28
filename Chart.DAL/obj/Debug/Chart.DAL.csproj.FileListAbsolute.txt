@@ -19,3 +19,13 @@ D:\1\WebApplication1\Chart.DAL\obj\Debug\Chart.DAL.csprojResolveAssemblyReferenc
 D:\1\WebApplication1\Chart.DAL\obj\Debug\Chart.DAL.csproj.CoreCompileInputs.cache
 D:\1\WebApplication1\Chart.DAL\obj\Debug\Chart.DAL.dll
 D:\1\WebApplication1\Chart.DAL\obj\Debug\Chart.DAL.pdb
+D:\курсы\Задания\WebApplication1\Chart.DAL\bin\Debug\Chart.DAL.dll.config
+D:\курсы\Задания\WebApplication1\Chart.DAL\bin\Debug\Chart.DAL.dll
+D:\курсы\Задания\WebApplication1\Chart.DAL\bin\Debug\Chart.DAL.pdb
+D:\курсы\Задания\WebApplication1\Chart.DAL\bin\Debug\EntityFramework.dll
+D:\курсы\Задания\WebApplication1\Chart.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\курсы\Задания\WebApplication1\Chart.DAL\bin\Debug\EntityFramework.xml
+D:\курсы\Задания\WebApplication1\Chart.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\курсы\Задания\WebApplication1\Chart.DAL\obj\Debug\Chart.DAL.csproj.CoreCompileInputs.cache
+D:\курсы\Задания\WebApplication1\Chart.DAL\obj\Debug\Chart.DAL.dll
+D:\курсы\Задания\WebApplication1\Chart.DAL\obj\Debug\Chart.DAL.pdb

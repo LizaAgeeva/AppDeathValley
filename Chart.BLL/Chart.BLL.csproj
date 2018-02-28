@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BussinessModels\Calculation.cs" />
+    <Compile Include="BussinessModels\FactoryMethod.cs" />
     <Compile Include="DTO\ChartDataDTO.cs" />
     <Compile Include="DTO\ParamDTO.cs" />
     <Compile Include="Infrastructure\ServiceModule.cs" />
