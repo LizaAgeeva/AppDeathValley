@@ -1,0 +1,15 @@
+D:\курсы\Задания\WebApplication1\Chart.BLL\bin\Release\Chart.BLL.dll
+D:\курсы\Задания\WebApplication1\Chart.BLL\bin\Release\Chart.BLL.pdb
+D:\курсы\Задания\WebApplication1\Chart.BLL\bin\Release\AutoMapper.dll
+D:\курсы\Задания\WebApplication1\Chart.BLL\bin\Release\Chart.DAL.dll
+D:\курсы\Задания\WebApplication1\Chart.BLL\bin\Release\Ninject.dll
+D:\курсы\Задания\WebApplication1\Chart.BLL\bin\Release\EntityFramework.dll
+D:\курсы\Задания\WebApplication1\Chart.BLL\bin\Release\Chart.DAL.pdb
+D:\курсы\Задания\WebApplication1\Chart.BLL\bin\Release\Chart.DAL.dll.config
+D:\курсы\Задания\WebApplication1\Chart.BLL\bin\Release\AutoMapper.xml
+D:\курсы\Задания\WebApplication1\Chart.BLL\bin\Release\Ninject.xml
+D:\курсы\Задания\WebApplication1\Chart.BLL\bin\Release\EntityFramework.xml
+D:\курсы\Задания\WebApplication1\Chart.BLL\obj\Release\Chart.BLL.csprojResolveAssemblyReference.cache
+D:\курсы\Задания\WebApplication1\Chart.BLL\obj\Release\Chart.BLL.csproj.CoreCompileInputs.cache
+D:\курсы\Задания\WebApplication1\Chart.BLL\obj\Release\Chart.BLL.dll
+D:\курсы\Задания\WebApplication1\Chart.BLL\obj\Release\Chart.BLL.pdb

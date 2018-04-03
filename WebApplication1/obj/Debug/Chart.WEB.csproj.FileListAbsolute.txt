@@ -205,3 +205,4 @@ D:\курсы\Задания\WebApplication1\WebApplication1\obj\Debug\Chart.WEB
 D:\курсы\Задания\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 D:\курсы\Задания\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
 D:\курсы\Задания\WebApplication1\WebApplication1\obj\Debug\Chart.WEB.csprojResolveAssemblyReference.cache
+D:\курсы\Задания\WebApplication1\WebApplication1\obj\Debug\Chart.WEB.csproj.CopyComplete

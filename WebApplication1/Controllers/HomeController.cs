@@ -9,6 +9,8 @@ using Chart.BLL.Interfaces;
 using Chart.BLL.DTO;
 using Chart.BLL.BussinessModels;
 using AutoMapper;
+using System.Threading.Tasks;
+using System.Data.Entity;
 
 
 namespace Chart.WEB.Controllers
@@ -40,13 +42,13 @@ namespace Chart.WEB.Controllers
         }
 
         [HttpPost]
-        public JsonResult JsonDataChart(Params model)
+        public async Task<JsonResult> JsonDataChart(Params model)
         {
          
             if (ModelState.IsValid)
             {
                 var param = Mapper.Map<Params, ParamDTO>(model);
-                var result = _DataService.GetData(param);
+                var result = await _DataService.GetDataAsync(param);
 
                 return Json(result, JsonRequestBehavior.AllowGet);
             }

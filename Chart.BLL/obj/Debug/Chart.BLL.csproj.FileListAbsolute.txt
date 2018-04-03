@@ -43,3 +43,4 @@ D:\курсы\Задания\WebApplication1\Chart.BLL\bin\Debug\Ninject.xml
 D:\курсы\Задания\WebApplication1\Chart.BLL\bin\Debug\EntityFramework.xml
 D:\курсы\Задания\WebApplication1\Chart.BLL\obj\Debug\Chart.BLL.dll
 D:\курсы\Задания\WebApplication1\Chart.BLL\obj\Debug\Chart.BLL.pdb
+D:\курсы\Задания\WebApplication1\Chart.BLL\obj\Debug\Chart.BLL.csproj.CopyComplete

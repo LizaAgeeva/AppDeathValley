@@ -1,0 +1,11 @@
+D:\курсы\Задания\WebApplication1\Chart.DAL\bin\Release\Chart.DAL.dll.config
+D:\курсы\Задания\WebApplication1\Chart.DAL\bin\Release\Chart.DAL.dll
+D:\курсы\Задания\WebApplication1\Chart.DAL\bin\Release\Chart.DAL.pdb
+D:\курсы\Задания\WebApplication1\Chart.DAL\bin\Release\EntityFramework.dll
+D:\курсы\Задания\WebApplication1\Chart.DAL\bin\Release\EntityFramework.SqlServer.dll
+D:\курсы\Задания\WebApplication1\Chart.DAL\bin\Release\EntityFramework.xml
+D:\курсы\Задания\WebApplication1\Chart.DAL\bin\Release\EntityFramework.SqlServer.xml
+D:\курсы\Задания\WebApplication1\Chart.DAL\obj\Release\Chart.DAL.csprojResolveAssemblyReference.cache
+D:\курсы\Задания\WebApplication1\Chart.DAL\obj\Release\Chart.DAL.csproj.CoreCompileInputs.cache
+D:\курсы\Задания\WebApplication1\Chart.DAL\obj\Release\Chart.DAL.dll
+D:\курсы\Задания\WebApplication1\Chart.DAL\obj\Release\Chart.DAL.pdb

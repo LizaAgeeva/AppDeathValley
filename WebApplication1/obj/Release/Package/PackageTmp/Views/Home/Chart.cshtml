@@ -1,0 +1,58 @@
+﻿
+
+
+
+
+
+  
+    @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>*@
+
+    @*<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>*@
+
+
+ 
+
+<div class="bodyStyle">
+
+    @using (Html.BeginForm("JsonDataChart", "Home", FormMethod.Post, new { @id = "resForm" }))
+    {
+        <table class="tableStyle">
+            <tr>
+                <td>
+                    Function:
+                </td>
+                <td>
+                    y=
+                    <input type="number"  name="coefficientA" />x^2+
+                    <input type="number"  name="coefficientB" />x+
+                    <input type="number"  name="coefficientC" />
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    Step:
+                </td>
+                <td> <input type="number" name="step"  /></td>
+
+            </tr>
+            <tr>
+                <td>
+                    From:
+                </td>
+                <td><input type="number"  name="sizeFrom" /> to <input type="text" size="1" name="sizeTo" /></td>
+
+            </tr>
+        </table>
+        <div class="buttonPosition">
+            <input type="submit" id="button" class='btn btn-primary' value="Plot" />
+        </div>
+    }
+
+    <div id="chart_div" class="chartStyle"></div>
+    @*<div id="result"></div>*@
+    </div>
+
+
+
+

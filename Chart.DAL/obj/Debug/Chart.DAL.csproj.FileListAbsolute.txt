@@ -29,3 +29,5 @@ D:\курсы\Задания\WebApplication1\Chart.DAL\bin\Debug\EntityFramework
 D:\курсы\Задания\WebApplication1\Chart.DAL\obj\Debug\Chart.DAL.csproj.CoreCompileInputs.cache
 D:\курсы\Задания\WebApplication1\Chart.DAL\obj\Debug\Chart.DAL.dll
 D:\курсы\Задания\WebApplication1\Chart.DAL\obj\Debug\Chart.DAL.pdb
+D:\курсы\Задания\WebApplication1\Chart.DAL\obj\Debug\Chart.DAL.csprojResolveAssemblyReference.cache
+D:\курсы\Задания\WebApplication1\Chart.DAL\obj\Debug\Chart.DAL.csproj.CopyComplete

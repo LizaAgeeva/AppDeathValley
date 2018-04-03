@@ -11,7 +11,7 @@ namespace Chart.BLL.Interfaces
     {
 
         List<ChartDataDTO> AddInDb(ParamDTO paramDTO);
-        List<ChartDataDTO> GetData(ParamDTO paramDTO);
+        Task<List<ChartDataDTO>> GetDataAsync(ParamDTO paramDTO);
         void Dispose();
     }
 }

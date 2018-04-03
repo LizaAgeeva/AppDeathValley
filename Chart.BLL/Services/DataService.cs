@@ -21,27 +21,29 @@ namespace Chart.BLL.Services
             Database = uow;
         }
 
-        public List<ChartDataDTO> GetData(ParamDTO paramDto)
+        public async Task<List<ChartDataDTO>> GetDataAsync(ParamDTO paramDto)
         {
-
-            var paramsCheck = Database.Params.GetAll()
-                .Where(p => p.CoefficientA == paramDto.CoefficientA)
-                .Where(p => p.CoefficientB == paramDto.CoefficientB)
-                .Where(p => p.CoefficientC == paramDto.CoefficientC)
-                .Where(p => p.SizeFrom == paramDto.SizeFrom)
-                .Where(p => p.SizeTo == paramDto.SizeTo)
-                .Where(p => p.Step == paramDto.Step);
-
-            if (paramsCheck.Any())
+            var t = await Task.Run(() =>
             {
-              
-                return FindData(paramsCheck.First().ParamId);
-            }
-            else
-            {
-                return AddInDb(paramDto);
-            }
+                var paramsCheck = Database.Params.GetAll()
+                    .Where(p => p.CoefficientA == paramDto.CoefficientA)
+                    .Where(p => p.CoefficientB == paramDto.CoefficientB)
+                    .Where(p => p.CoefficientC == paramDto.CoefficientC)
+                    .Where(p => p.SizeFrom == paramDto.SizeFrom)
+                    .Where(p => p.SizeTo == paramDto.SizeTo)
+                    .Where(p => p.Step == paramDto.Step);
 
+                if (paramsCheck.Any())
+                {
+
+                    return FindData(paramsCheck.First().ParamId);
+                }
+                else
+                {
+                    return AddInDb(paramDto);
+                }
+            });
+            return t;
             
         }
 
