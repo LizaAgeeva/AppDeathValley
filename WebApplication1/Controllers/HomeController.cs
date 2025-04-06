@@ -35,7 +35,7 @@ namespace Chart.WEB.Controllers
             // Factory Method 
             FactoryMethod factory1 = new FactoryMethod("Pie1");
             string type1 = factory1.typeChart;
-            FactoryMethod factory2 = new FactoryMethod("Line");
+            FactoryMethod factory2 = new FactoryMethod("Line1"); //edited this row
             string type2 = factory2.typeChart;
             ViewBag.Message = type1 + " and " + type2;
             return View();
