@@ -33,7 +33,7 @@ namespace Chart.WEB.Controllers
         public ActionResult TypeChart()
         {
             // Factory Method 
-            FactoryMethod factory1 = new FactoryMethod("Pie");
+            FactoryMethod factory1 = new FactoryMethod("Pie1");
             string type1 = factory1.typeChart;
             FactoryMethod factory2 = new FactoryMethod("Line");
             string type2 = factory2.typeChart;
